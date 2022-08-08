@@ -1,0 +1,6 @@
+.fr-container {
+  width: 100%;
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, -0.5777rem + 6.7314vw, 7.5rem);
+}
