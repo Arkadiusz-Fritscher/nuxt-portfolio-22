@@ -1,7 +1,14 @@
-<script setup></script>
+<script setup>
+defineProps({
+  important: {
+    type: Boolean,
+    default: false,
+  },
+});
+</script>
 
 <template>
-  <nuxt-link class="link uppercase font-semibold">
+  <nuxt-link class="link uppercase font-semibold" :class="{ important: important }">
     <slot></slot>
   </nuxt-link>
 </template>
@@ -34,5 +41,39 @@
 .link:is(.router-link-exact-active)::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+.important {
+  border: 2px solid theme('colors.slate.900');
+  padding: 0.3em 0.8em;
+  z-index: 1;
+}
+
+.important::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+  z-index: -1;
+}
+
+.important:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+  z-index: -1;
+}
+
+.important:hover {
+  color: theme('colors.slate.50');
+  transition: color 0.2s ease-in-out;
+}
+
+.important:is(.router-link-exact-active) {
+  color: theme('colors.slate.50');
 }
 </style>

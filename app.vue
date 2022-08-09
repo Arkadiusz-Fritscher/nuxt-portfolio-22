@@ -1,6 +1,4 @@
 <template>
-  <div class="fr-container">
-    <navigation-main-navigation />
-    <NuxtPage />
-  </div>
+  <navigation-main-navigation />
+  <NuxtPage />
 </template>
