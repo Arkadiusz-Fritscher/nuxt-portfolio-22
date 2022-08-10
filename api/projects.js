@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: 1,
-    name: 'Project name 1',
+    name: 'The Project named one',
     slug: 'project-1',
     thumbnail: '',
     date: 'September 2022',
@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     id: 2,
-    name: 'Project name 2',
+    name: 'The Project named two',
     slug: 'project-2',
     thumbnail: '',
     date: 'Januar 2022',
@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     id: 3,
-    name: 'Project name 3',
+    name: 'The Project named three',
     slug: 'project-3',
     thumbnail: '',
     date: 'November 2021',

@@ -3,7 +3,7 @@ import { projects } from '~/api/projects';
 </script>
 
 <template>
-  <section id="projects" class="project-grid">
+  <section id="work" class="project-grid">
     <work-card v-for="(project, i) in projects" :key="i" :project="project" />
   </section>
 </template>

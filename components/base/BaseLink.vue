@@ -15,7 +15,7 @@ defineProps({
 
 <style scoped>
 .link {
-  color: theme('colors.slate.900');
+  color: theme('colors.zinc.900');
   position: relative;
   text-decoration: none;
 }
@@ -25,7 +25,7 @@ defineProps({
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: theme('colors.slate.900');
+  background-color: theme('colors.zinc.900');
   bottom: 0;
   left: 0;
   transform-origin: right;
@@ -44,7 +44,7 @@ defineProps({
 }
 
 .important {
-  border: 2px solid theme('colors.slate.900');
+  border: 2px solid theme('colors.zinc.900');
   padding: 0.3em 0.8em;
   z-index: 1;
 }
@@ -69,11 +69,11 @@ defineProps({
 }
 
 .important:hover {
-  color: theme('colors.slate.50');
+  color: theme('colors.zinc.50');
   transition: color 0.2s ease-in-out;
 }
 
 .important:is(.router-link-exact-active) {
-  color: theme('colors.slate.50');
+  color: theme('colors.zinc.50');
 }
 </style>

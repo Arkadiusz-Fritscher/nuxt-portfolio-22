@@ -36,6 +36,20 @@ module.exports = {
             lineHeight: '150%',
           },
         ],
+        'fr-h1': [
+          'clamp(1.5rem, 0.9691rem + 2.2654vw, 3.6875rem)', // 24/59px
+          {
+            letterSpacing: '-0.01em',
+            lineHeight: '130%',
+          },
+        ],
+        'fr-h2': [
+          'clamp(1.25rem, 0.9466rem + 1.2945vw, 2.5rem)', // 20/40px
+          {
+            letterSpacing: '0em',
+            lineHeight: '130%',
+          },
+        ],
         'fr-h3': [
           'clamp(1.125rem, 0.9126rem + 0.9061vw, 2rem)', // 18/32px
           {
@@ -56,7 +70,8 @@ module.exports = {
         'fr-2xl': 'clamp(14.5rem, 14.1359rem + 1.5534vw, 16rem)',
         'fr-xl': 'clamp(3rem, 2.4235rem + 2.4595vw, 5.375rem)',
         'fr-lg': 'clamp(2.5rem, 2.2421rem + 1.1003vw, 3.5625rem)',
-        'fr-sm': 'clamp(0.5rem, 0.3786rem + 0.5178vw, 1rem)',
+        'fr-md': 'clamp(1rem, 0.8786rem + 0.5178vw, 1.5rem)', // 16 / 24px
+        'fr-sm': 'clamp(0.5rem, 0.3786rem + 0.5178vw, 1rem)', // 8/16px
         'fr-xs': 'clamp(0.25rem, 0.1893rem + 0.2589vw, 0.5rem)', // 4/8px
       },
     },

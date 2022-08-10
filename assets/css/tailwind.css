@@ -4,6 +4,6 @@
 
 @layer components {
   body {
-    @apply text-fr-base text-slate-900 bg-slate-50;
+    @apply text-fr-base text-zinc-900 bg-zinc-50;
   }
 }

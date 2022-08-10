@@ -2,13 +2,13 @@
 const navLinks = [
   {
     name: 'Work',
-    url: { hash: '#start' },
+    url: { hash: '#work' },
     important: false,
   },
 
   {
     name: 'About',
-    url: { hash: '#work' },
+    url: { hash: '#about' },
     important: false,
   },
 
@@ -21,9 +21,9 @@ const navLinks = [
 </script>
 
 <template>
-  <nav class="fr-container flex justify-between items-center py-8">
-    <div>
-      <nuxt-link to="/"> Logo </nuxt-link>
+  <nav class="flex justify-between items-center py-8">
+    <div class="font-bold uppercase">
+      <nuxt-link to="/"> Fritscher </nuxt-link>
     </div>
 
     <div id="desktop-menu" class="hidden sm:flex sm:gap-x-6 md:gap-x-8 items-center">

@@ -26,12 +26,13 @@ defineProps({
         https://api.lorem.space/image/shoes?w=1920&h=1080 1920w
       "
       sizes="(min-width: 62.5em) 50vw, 100vw"
+      @click="$router.push({ name: 'slug', params: { slug: project.slug } })"
     />
 
     <figcaption class="pt-fr-sm">
       <h3 class="text-fr-h3 font-semibold">{{ project.name }}</h3>
       <ul v-if="project.services.length" class="flex mt-fr-xs">
-        <li v-for="(service, i) in project.services" :key="i" class="text-fr-caption text-slate-700">{{ service }}</li>
+        <li v-for="(service, i) in project.services" :key="i" class="text-fr-caption">{{ service }}</li>
       </ul>
     </figcaption>
   </figure>
